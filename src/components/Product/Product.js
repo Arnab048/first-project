@@ -4,10 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 
 const Product = (props) => {
-    const {product,cnt,setCnt,cost,setCost} = props;
+    const {product,cnt,setCnt,cost,setCost,scost,setScost} = props;
     function onClickHandler() {
         setCnt(cnt+1);
         setCost(cost+product.price);
+        setScost(50);
     }
     return (
         <div className="product">
